@@ -1,4 +1,4 @@
 postgreSQL-tips
-===============
+==================
 
-Tips on using postgreSQL
+My day to day working tips for postgreSQL DB 
