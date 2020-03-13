@@ -19,3 +19,7 @@ Writing query output to a CSV file:
 After this operation all the query results will be stored in a CSV file.
 Using console again for query output:
 # \o
+
+##Check the size of a postgre database
+SELECT pg_size_pretty( pg_database_size('dbname') );
+*replace **dbname** with the correct dbname
