@@ -22,3 +22,4 @@ pg_restore --dbname=testdb /var/lib/pgsql/backups/testdb_backup
 ## Check the size of a postgreSQL database
 SELECT pg_size_pretty( pg_database_size('dbname') )
 *replace **dbname** with the correct dbname*
+
