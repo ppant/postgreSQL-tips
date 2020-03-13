@@ -13,13 +13,12 @@ pg_dump --blob -Fc testdb -f /var/lib/pgsql/backups/testdb_backup
 ## Restoring PostgreSQL database from back up dump
 pg_restore --dbname=testdb /var/lib/pgsql/backups/testdb_backup
 
-## Writing query output to a CSV file:
+## Writing query output to a CSV file
 \o 'tmp/logs/query_out_dump.csv'
 
-## After this operation all the query results will be stored in a CSV file.
-Using console again for query output:
+## After this operation all the query results will be stored in a CSV file
 \o
 
 ## Check the size of a postgreSQL database
-SELECT pg_size_pretty( pg_database_size('dbname') );
+SELECT pg_size_pretty( pg_database_size('dbname') )
 *replace **dbname** with the correct dbname*
