@@ -1,25 +1,25 @@
-Create a new database name testdb
-# createdb <dbname>
-e.g: # createdb testdb
+## Create a new database name testdb
+createdb <dbname>
+createdb testdb
 
-Remove a PostgreSQL database
-# dropdb <dbname>
-e.g: # dropdb testdb
+## Remove a PostgreSQL database
+dropdb <dbname>
+dropdb testdb
 
-Backing up a PostgreSQL database
-# su - postgres
-# pg_dump --blob -Fc testdb -f /var/lib/pgsql/backups/testdb_backup
+## Backing up a PostgreSQL database
+su - postgres
+pg_dump --blob -Fc testdb -f /var/lib/pgsql/backups/testdb_backup
 
-Restoring PostgreSQL database from back up dump
-# pg_restore --dbname=testdb /var/lib/pgsql/backups/testdb_backup
+## Restoring PostgreSQL database from back up dump
+pg_restore --dbname=testdb /var/lib/pgsql/backups/testdb_backup
 
-Writing query output to a CSV file:
-# \o 'tmp/logs/query_out_dump.csv'
+## Writing query output to a CSV file:
+\o 'tmp/logs/query_out_dump.csv'
 
-After this operation all the query results will be stored in a CSV file.
+## After this operation all the query results will be stored in a CSV file.
 Using console again for query output:
-# \o
+\o
 
-##Check the size of a postgre database
+## Check the size of a postgreSQL database
 SELECT pg_size_pretty( pg_database_size('dbname') );
-*replace **dbname** with the correct dbname
+*replace **dbname** with the correct dbname*
