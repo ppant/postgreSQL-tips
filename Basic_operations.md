@@ -40,7 +40,7 @@ SELECT
   '01-OCT-2015'::DATE;
 Notice that the cast syntax with the cast operator (::) is PostgreSQL-specific and does not conform to the SQL standard
 
-###Example: Select date field using LIKE
+### Example: Select date field using LIKE
 select remind_date from reminder where CAST(reminder.remind_date AS VARCHAR) like '2020-02-25%' order by remind_date desc;
 
 
